@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saad Ashraf - UI/UX Engineer</title>
+    <title>UX_UI_HW_20</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
@@ -14,95 +16,250 @@
 </head>
 
 <body>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
     <header>
-        <nav>
+        <nav class="top-nav">
             <div class="nav-left">
                 <img src="images/nazar.png" width="40" height="40" alt="Saad Ashraf Logo" class="logo-img">
                 <p class="name">SAAD ASHRAF</p>
             </div>
             <div class="nav-right">
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://sa-gwu-bootcamp.github.io/UX_UI_HW_18/">About</a></li>
+                    <li><a href="https://sa-gwu-bootcamp.github.io/UX_UI_HW_18/">Skills</a></li>
+                    <li><a href="https://sa-gwu-bootcamp.github.io/UX_UI_HW_18/">Work</a></li>
+                    <li><a href="https://sa-gwu-bootcamp.github.io/UX_UI_HW_18/">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section id="about">
-        <div class="hero">
-            <img src="images/abstract.png" alt="Abstract image" class="hero-img">
-            <h1>SAAD ASHRAF (1996 – )</h1>
-            <p>is a UI/UX engineer currently living and working with the Northern Virginia area.</p>
-            <button class="download-button">
-                <p>Download Resume</p>
-            </button>
-        </div>
+        <ul class="nav" id="caseStudyNav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#introduction">Introduction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#research">Research</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#problem">Problem Statement</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#iteration">Iteration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#prototyping">Prototyping</a>
+            </li>
+        </ul>
+        <section id="introduction">
+            <div class="jumbotron">
+                <h1>Transformer DC Website Re-design</h1>
+                <img src="images/transformer_physical.jpeg" class="transformer">
+                <p>Transformer, a 501(c)(3) non-profit based in Washington, DC, is dedicated to supporting emerging
+                    artists and arts leaders through innovative exhibitions and programs. Founded in June 2002, its
+                    mission emphasizes inclusivity, professional excellence, and the freedom of artistic expression. In
+                    our quest to enhance digital accessibility and engagement, we're redesigning our website to reflect
+                    these core values. This initiative will make our diverse, contemporary art more accessible, ensuring
+                    our online platform is as inclusive and engaging as our physical exhibitions and programs.</p>
+            </div>
         </section>
-        <section class="mySkills" id="skills">
-            <h1>My UX Skills</h1>
-            <div class="flexContainer">
-                <div>
-                    <img src="images/user_research.png" alt="User Research Icon" class="skill-img">
-                    <h3>User Research</h3>
-                    <p>Emphasizing the investigative aspect of understanding user needs and translating that into
-                        design.</p>
+        <section id="research" class="mt-4">
+            <div class="container text-center">
+                <h1 class="mb-4 text-center">Research & Ideation</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <img src="images/transformer_current.png" class="current-img" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Current Site</h3>
+                                <p class="card-text">
+                                    Upon reviewing the Transformer website, our team identified a critical need for a
+                                    redesign. The site's design elements were overly bold and the navigation proved to
+                                    be complex, hindering easy access. Our objective is to create a more streamlined and
+                                    visually appealing interface, enhancing overall user experience and accessibility.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/user_interface_design.png" alt="User Interface Design Icon" class="skill-img">
-                    <h3>User Interface Design</h3>
-                    <p>Focusing on the creation of interfaces that are both beautiful and functional, enhancing the
-                        overall user experience.</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <img src="images/transformer_affinity.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Surveys and Interviews</h3>
+                                <p class="card-text">We conducted surveys and interviews to hone in on what could be
+                                    improved further on. During User Interviews, we discovered that our NGO's website is
+                                    hard to navigate. Therefore, we believe that improving the design, accessibility
+                                    features, and
+                                    interactivity of the website will benefit the organization. We might do this by
+                                    having clearer CTA, and redesigning the navigation bar. Doing this will allow our
+                                    product not only have a cleaner, more sleek look but bring
+                                    more users to the site.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/web_development.png" alt="Web Development Icon" class="skill-img">
-                    <h3>Web Development</h3>
-                    <p>Highlighting technical skills in coding, creating websites that are not just visually appealing
-                        but also technically sound.</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <img src="images/transformer_user_persona.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">User Persona</h3>
+                                <p class="card-text">Based on the comprehensive insights from our interviews, we crafted
+                                    an official user persona that encapsulates the aspirations, needs, and
+                                    challenges faced by emerging artists like Alexa, guiding our website redesign to
+                                    better serve and engage our artistic community.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section class="myWork" id="work">
-            <h1>My Work</h1>
-            <div class="workGrid">
-                <div>
-                    <img src="images/icare.png" alt="Project Image" class="project-img">
-                </div>
-                <div class="project-info">
-                    <h4>iCare</h4>
-                    <p>Generative AI-based assistant for therapists.</p>
-                    <button class="view-project-button">View Project</button>
-                </div>
-                <div>
-                    <img src="images/treasury.png" alt="Project Image" class="project-img">
-                </div>
-                <div class="project-info">
-                    <h4>Treasury Re-design</h4>
-                    <p>Case study for re-designing the U.S Department of Treasury website.</p>
-                    <button class="view-project-button">View Project</button>
-                </div>
-                <div>
-                    <img src="images/transformer.png" alt="Project Image" class="project-img">
-                </div>
-                <div class="project-info">
-                    <h4>Transformer Re-design</h4>
-                    <p>Refresh in look for the site for DC-based non-profit art community space, Transformer.</p>
-                    <button class="view-project-button">View Project</button>
+        <section id="problem" class="mt-5">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h1 class="card-title">Problem Statement</h1>
+                        <p class="card-text">The current website for our art exhibit faces accessibility issues,
+                            hindering its usability for a diverse and general audience. This lack of accessibility
+                            creates barriers for individuals with disabilities and limits the overall inclusivity of the
+                            exhibition. To address this challenge, there is a pressing need to redesign the online
+                            exhibit platform, ensuring it complies with accessibility standards and provides a seamless
+                            and enjoyable experience for all users. This transformation will not only align with the
+                            principles of inclusivity but also expand the reach of the art exhibit to a broader
+                            audience, fostering a more diverse and engaged community of art enthusiasts.</p>
+                    </div>
                 </div>
             </div>
-            <button><h3>View all projects</h3></button>
+        </section>
+        <section id="iteration">
+            <div class="container text-center">
+                <h1 class="m-5">Iteration</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <img src="images/transformer_feature_matrix.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Feature Prioritization Matrix</h3>
+                                <p class="card-text">Drawing from our in-depth research, we've compiled an extensive
+                                    list of potential enhancements. These will be strategically evaluated in our feature
+                                    prioritization matrix to determine which improvements should be addressed foremost
+                                    to optimize our website's functionality and user experience.</p>
+                            </div>
+                        </div>al
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <img src="images/transformer_i_like.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">I Like, I Wish, What If Diagram</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <img src="images/transformer_story_map.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Storyboard</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <img src="images/transformer_heuristic.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Heuristic Evaluation</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="prototyping">
+            <div class="container text-center">
+                <h1 class="m-5">Prototyping</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <img src="images/transfomer_card_sort.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Card Sorting</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <img src="images/transformer_style_guide.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">UI Style Guide</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <img src="images/transformer_wireframe.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Wireframe</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <img src="images/transformer_desktop.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Desktop Prototype</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <img src="images/transformer_mobile.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Mobile Prototype</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jumbotron">
+                    <h1>Conclusion</h1>
+                    <p>Having finalized our high-fidelity prototypes, we are ready to embark on an exciting phase of
+                        development that promises to redefine the NGO's presence and the DC art community's engagement.
+                        Our vision extends beyond our current timeline; with more time, we would have integrated virtual
+                        artist gallery spaces into our platform. These virtual galleries, designed to enhance user
+                        interaction and broaden our reach, would feature immersive 3D gallery tours, dynamic art
+                        installations, artist-curated exhibitions, and live artistic events.</p>
+                </div>
+            </div>
         </section>
     </main>
-
     <footer>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://sa-gwu-bootcamp.github.io/UX_UI_HW_18/">About</a></li>
+            <li><a href="https://sa-gwu-bootcamp.github.io/UX_UI_HW_18/">Skills</a></li>
+            <li><a href="https://sa-gwu-bootcamp.github.io/UX_UI_HW_18/">Work</a></li>
+            <li><a href="https://sa-gwu-bootcamp.github.io/UX_UI_HW_18/">Contact</a></li>
         </ul>
         <p>Saad Ashraf - 2024</p>
     </footer>
