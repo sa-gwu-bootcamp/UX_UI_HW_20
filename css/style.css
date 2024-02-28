@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Kosugi', sans-serif;
+    background: #fff;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background: #F8F8F8;
+    color: #333;
+    border-bottom: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.name {
+    font-family: 'Work Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between; 
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+nav li {
+    padding: 0 10px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-img {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile-img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-img {
+    height: 400px;
+    width: 400px;
+}
+
+.download-button {
+    display: inline-block;
+    font-family: 'Kosugi', sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+footer li {
+    padding: 0 10px;
+}
+
+footer a {
+    color: #000000;
+    font-size: 1em;
+}
