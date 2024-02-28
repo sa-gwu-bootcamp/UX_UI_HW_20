@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -19,16 +21,17 @@
                 <p class="name">SAAD ASHRAF</p>
             </div>
             <div class="nav-right">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
+        <section id="about">
         <div class="hero">
             <img src="images/abstract.png" alt="Abstract image" class="hero-img">
             <h1>SAAD ASHRAF (1996 – )</h1>
@@ -37,6 +40,61 @@
                 <p>Download Resume</p>
             </button>
         </div>
+        </section>
+        <section class="mySkills" id="skills">
+            <h1>My UX Skills</h1>
+            <div class="flexContainer">
+                <div>
+                    <img src="images/user_research.png" alt="User Research Icon" class="skill-img">
+                    <h3>User Research</h3>
+                    <p>Emphasizing the investigative aspect of understanding user needs and translating that into
+                        design.</p>
+                </div>
+                <div>
+                    <img src="images/user_interface_design.png" alt="User Interface Design Icon" class="skill-img">
+                    <h3>User Interface Design</h3>
+                    <p>Focusing on the creation of interfaces that are both beautiful and functional, enhancing the
+                        overall user experience.</p>
+                </div>
+                <div>
+                    <img src="images/web_development.png" alt="Web Development Icon" class="skill-img">
+                    <h3>Web Development</h3>
+                    <p>Highlighting technical skills in coding, creating websites that are not just visually appealing
+                        but also technically sound.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="myWork" id="work">
+            <h1>My Work</h1>
+            <div class="workGrid">
+                <div>
+                    <img src="images/icare.png" alt="Project Image" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h4>iCare</h4>
+                    <p>Generative AI-based assistant for therapists.</p>
+                    <button class="view-project-button">View Project</button>
+                </div>
+                <div>
+                    <img src="images/treasury.png" alt="Project Image" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h4>Treasury Re-design</h4>
+                    <p>Case study for re-designing the U.S Department of Treasury website.</p>
+                    <button class="view-project-button">View Project</button>
+                </div>
+                <div>
+                    <img src="images/transformer.png" alt="Project Image" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h4>Transformer Re-design</h4>
+                    <p>Refresh in look for the site for DC-based non-profit art community space, Transformer.</p>
+                    <button class="view-project-button">View Project</button>
+                </div>
+            </div>
+            <button><h3>View all projects</h3></button>
+        </section>
     </main>
 
     <footer>
@@ -49,4 +107,5 @@
         <p>Saad Ashraf - 2024</p>
     </footer>
 </body>
+
 </html>

@@ -10,6 +10,11 @@ body, html {
     margin: 0;
 }
 
+h3 {
+    font-family: 'Kosugi', sans-serif;
+    font-size: 1.5rem;
+}
+
 header {
     background: #F8F8F8;
     color: #333;
@@ -94,7 +99,7 @@ p {
     width: 400px;
 }
 
-.download-button {
+button {
     display: inline-block;
     font-family: 'Kosugi', sans-serif;
     color: #333;
@@ -103,6 +108,10 @@ p {
     padding: 10px 30px;
     cursor: pointer;
     border: 1px solid black;
+}
+
+.view-project-button {
+    width: 40%;
 }
 
 footer {
@@ -128,4 +137,116 @@ footer li {
 footer a {
     color: #000000;
     font-size: 1em;
+}
+
+.mySkills {
+    
+    text-align: center;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.flexContainer > div {
+    width: 33%;
+    margin: 10px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+    .flexContainer > div {
+        width: 100%;
+    }
+}
+
+.skill-img {
+    height: 300px;
+    width: 300px;
+    object-fit: scale-down;
+}
+
+.myWork {
+   text-align: center;
+   width: 70%;
+   margin: auto;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    border: 1px solid black;
+}
+
+@media (max-width: 600px) {
+    .workGrid {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto auto auto; 
+        grid-gap: 20px; 
+        grid-template-areas:
+            "image1"
+            "text1"
+            "image2"
+            "text2"
+            "image3"
+            "text3";
+    }
+
+    .workGrid > div:nth-child(1) { 
+        grid-area: image1;
+    }
+
+    .workGrid > div:nth-child(2) { 
+        grid-area: text1;
+    }
+
+    .workGrid > div:nth-child(3) { 
+        grid-area: image2;
+    }
+
+    .workGrid > div:nth-child(4) { 
+        grid-area: text2;
+    }
+
+    .workGrid > div:nth-child(5) {
+        grid-area: image3;
+    }
+
+    .workGrid > div:nth-child(6) { 
+        grid-area: text3;
+    }
+
+    .project-img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .view-project-button {
+        width: 100px;
+    }
+
+    .project-info {
+        width: 100%; 
+    }
 }
